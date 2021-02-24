@@ -1,0 +1,63 @@
+There are many types of R-objects. The frequently used ones are −
+
+Vectors
+Lists
+Matrices
+Arrays
+Factors
+Data Frames
+
+1)vector
+
+example:
+# Create a vector.
+vec<- c('a','b',"c")
+print(vec)
+
+# Get the class of the vector.
+print(class(vec))
+
+2)Lists
+
+example:
+list1 <- list(c(2,5,3),c('a','b','c'))
+
+# Print the list.
+print(list1)
+
+3)Matrix
+
+example:
+
+M = matrix( c('a','a','b','c','b','a'), nrow = 2, ncol = 3, byrow = TRUE)
+print(M)
+
+4)Arrays
+
+example:
+
+a <- array(c('test','test2'),dim = c(3,3,2))
+print(a)
+
+5)Factors
+
+example:
+
+colors <- c('green','green','yellow','red','red','red','green')
+
+# Create a factor object.
+factor1 <- factor(colors)
+
+# Print the factor.
+print(factor1)
+print(nlevels(factor1))
+
+6)Dataframe
+
+example:
+
+# Create the data frame.
+
+df<-data.frame(a=c(1,2,3,4,5),b=c(6,7,8,9,10),c=c(11,12,13,14,15))
+
+print(df)

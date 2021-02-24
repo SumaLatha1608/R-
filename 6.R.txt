@@ -1,0 +1,47 @@
+1)Break statement
+
+A break statement is used inside a loop (repeat, for, while) to stop the iterations and flow the control outside of the loop.
+
+In a nested looping situation, where there is a loop inside another loop, this statement exits from the innermost loop that is being evaluated.
+
+the break statement can also be used inside the  else branch of if...else statement.
+
+syntax:
+
+if (test_expression) {
+break
+}
+
+example:
+
+x <- LETTERS[1:10]
+for (val in x) {
+if (val == 'F'){
+break
+}
+print(val)
+}
+
+
+2)Next statement
+
+A next statement is useful when we want to skip the current iteration of a loop without terminating it. On encountering next, the R parser skips further evaluation and starts next iteration of the loop.
+
+the break statement can also be used inside the  else branch of if...else statement.
+
+syntax:
+
+if (test_condition) {
+next
+}
+
+example:
+
+
+x <- LETTERS[1:10]
+for (val in x) {
+if (val == 'F'){
+next
+}
+print(val)
+}
